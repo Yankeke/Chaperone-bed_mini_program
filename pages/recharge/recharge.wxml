@@ -1,0 +1,29 @@
+<view>
+  <view class='top'>
+    <view class='top_border'>
+      <view class='top_img'>
+        <image src='../images/wallet_ico.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='center'>
+     <view class='center_text'>充值{{from=='balance'?'余额':'押金'}}(元)</view>
+    <!-- 充值余额 -->
+    <block wx:if="{{from == 'balance'}}">
+      <form bindsubmit='formSubmit'>
+        <radio-group bindchange="radioChange" name="selValue">
+          <label wx:for="{{moneyVal}}" class="{{currentItem==index?'active':''}}" data-index="{{index}}" bindtap='choose' >
+            <radio value='{{item * 100}}' checked="{{item.checked}}" hidden='hidden' ></radio>
+            <text class='money_item'>{{item}}元</text>
+          </label>
+        </radio-group>
+        <button class="sub_btn" form-type='submit' disabled="{{disabled}}">提交</button>
+      </form>
+    </block>
+    <!-- 充值押金 -->
+    <block wx:if="{{from == 'deposit'}}">
+      <view class='money'>充值押金{{yajinVal}}元</view>
+      <button class='sub_btn' disabled='{{disabled}}' bindtap='payDeposit' >确定         </button>
+    </block>
+  </view>
+</view>

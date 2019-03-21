@@ -1,0 +1,11 @@
+<view>
+  <view class='top' >
+  </view>
+  <view class='card'>
+    <image src='../images/openbg.jpg' class='openbg' ></image>
+    <view class='num'>床柜编号</view>
+    <view class='code'>{{uuid}}</view>
+  </view>
+  <button class='open_btn' bindtap='goOpen' disabled='{{disabled}}'>立即开门</button>
+  <view class='admin_btn' bindtap='toAlogin'></view>
+</view>

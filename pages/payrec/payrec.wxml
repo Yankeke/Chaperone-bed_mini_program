@@ -1,0 +1,17 @@
+<view>
+  <block wx:if="{{payrec.length > 0}}">
+    <view class='list' wx:for="{{payrec}}" >
+      <view class='list_item'>
+        <text>充值类型：{{item.oType == 1?"押金":"余额"}}</text>
+        <text>订单ID：{{item.oId}}</text>
+      </view>
+      <view class='list_item'>
+        <text>{{item.oPayTime}}</text>
+        <text>{{item.oMoney}}元</text>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='no_record'>木有充值记录哦~</view>
+  </block>
+</view>

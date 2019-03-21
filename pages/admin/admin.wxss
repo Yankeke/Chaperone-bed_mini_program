@@ -1,0 +1,56 @@
+.top{
+  width: 100%;
+  height: 350rpx;
+  background: #00bcd4;
+}
+.top .top_txt{
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  padding-top: 60rpx;
+}
+.admin{
+  width: 90%;
+  border-radius: 10rpx;
+  background: #fff;
+  box-shadow: 5rpx 5rpx 8rpx #ccc;
+  padding: 30rpx 20rpx;
+  margin: 0 auto;
+  margin-top: -165rpx;
+  box-sizing: border-box; 
+}
+.info .title,.ctrl .title{
+  color: #767778;
+  line-height: 70rpx;
+}
+.info .uuid,.info .bed_info{
+  text-align: center;
+  color: #00bcd4;
+  font-size: 1.5rem;
+  line-height: 100rpx;
+}
+.ctrl .edit_info{
+  width: 100%;
+  border:1px solid #ccc;
+  border-radius: 10rpx;
+  height: 160rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+}
+.btn{
+  margin-top: 50rpx;
+  background: #00bcd4;
+  color: #fff;
+  padding: 10rpx;
+}
+.ctrl{
+  width: 90%;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 5rpx 5rpx 8rpx #ccc;
+  padding: 30rpx 20rpx;
+  margin: 0 auto;
+  margin-top: 25rpx;
+  box-sizing: border-box;
+}

@@ -1,0 +1,27 @@
+<view class='rent'>
+  <block wx:if="{{rent_record.length>0}}">
+    <view class='list' wx:for="{{rent_record}}">
+      <view class='list_top'>
+        床柜号：{{item.uuid}}
+      </view>
+      <view class='list_center'>
+        <view class='list_left'>
+          <view class='rent_time'> 
+            <image src='../images/starttime.png' class='time_ico' ></image> 
+            <text>{{item.ktime}}</text>
+          </view>
+          <view class='rent_time'>
+            <image src='../images/endtime.png' class='time_ico' ></image>
+            <text>{{item.jtime}}</text>
+          </view>
+        </view>
+        <view class='list_right'>
+          <!-- <text style='font-size:1.2rem'>¥ 100</text> -->
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='no_record'>木有租借记录哦~</view>
+  </block>
+</view>

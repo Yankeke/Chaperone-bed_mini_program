@@ -1,0 +1,18 @@
+<view>
+  <view class='top'></view>
+  <view class='main'>
+    <view class='title'>故障报告</view>
+    <form bindsubmit='formSubmit' >
+      <input placeholder='输入床柜编号' class='input' name="uuid" type='number' maxlength='10' bindinput='uuidInput' ></input>
+      <view >
+        <input placeholder='输入手机号码，方便我们联系您' class='input' name="phone" type='number' maxlength='11' bindinput='phoneInput' ></input>
+      </view>
+      <view class='note'>
+        <textarea placeholder='请输入故障描述' maxlength='{{noteMaxLen}}' bindinput='bindWordLimit' name="warnNote" ></textarea>
+        <text class='wordLimit'>{{currentNoteLen|0}}/{{noteMaxLen}}个字</text>
+        <view style='clear:both'></view>
+      </view>
+      <button class='sub_btn' formType="submit" disabled='{{disabled}}' >提交</button>
+    </form>
+  </view>
+</view>

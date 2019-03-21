@@ -1,0 +1,54 @@
+.bind{
+  width: 100%;
+  height: 340rpx;
+  background: #00bcd4;
+  position: relative;
+}
+.bind .form{
+  position: absolute;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 5rpx 5rpx 8rpx #ccc;
+  width: 95%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 10rpx 30rpx 30rpx;
+  top: 220rpx;
+}
+.bind .form .form_input{
+  display: flex;
+  align-items: center;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #ccc;
+}
+.bind .form .form_input .input{
+  flex: 1;
+  padding: 0 15rpx;
+  font-size: 1.2rem
+}
+.bind .form .form_input .form_ico{
+  width: 55rpx;
+  height: 55rpx;
+}
+.bind .form .form_input .getCode{
+  width: 52%;
+  text-align: center;
+  border-left: 1px solid #ccc;
+}
+
+.bind .form .form_btn{
+  width: 100%;
+  background: #00bcd4;
+  border-radius: 90rpx;
+  padding: 5rpx;
+  border: 0;
+  color: #fff;
+  margin-top:90rpx;
+}
+.bind .form .tip{
+  text-align: center;
+  font-size: 30rpx;
+  margin-top:30rpx;
+}

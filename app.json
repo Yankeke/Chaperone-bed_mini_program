@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/user/user",
+    "pages/warn/warn",
+    "pages/help/help",
+    "pages/phone/phone",
+    "pages/wallet/wallet",
+    "pages/rentrec/rentrec",
+    "pages/payrec/payrec",
+    "pages/recharge/recharge",
+    "pages/withdraw/withdraw",
+    "pages/scanresult/scanresult",
+    "pages/alogin/alogin",
+    "pages/admin/admin"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00bcd4",
+    "navigationBarTitleText": "智慧共享陪护床",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#767778",
+    "selectedColor": "#00bcd4",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/homec.png",
+        "selectedIconPath": "pages/images/homec0.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "pages/images/userc.png",
+        "selectedIconPath": "pages/images/userc0.png"
+      }
+    ]
+  }
+}

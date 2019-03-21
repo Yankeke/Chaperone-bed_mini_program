@@ -1,0 +1,22 @@
+<view>
+  <view class='top'>
+
+  </view>
+  <view class='alogin'>
+    <view class='alogin_img'>
+      <image src='../images/logo.png' class='img'></image>
+    </view>
+    <view class='slogen'>基于物联网 管理更方便</view>
+    <form bindsubmit='formSubmit'>
+      <view class='alogin_input'>
+        <image src='../images/user.png' class='ipt_img'></image>
+        <input type='text' class='ipt_input' placeholder='输入用户名' name="user" bindinput='userInput' value="{{userVal}}"></input>
+      </view>
+      <view class='alogin_input'>
+        <image src='../images/password.png' class='ipt_img'></image>
+        <input class='ipt_input' type='password' placeholder='输入密码' name="pwd" bindinput='pwdInput' value="{{pwdVal}}"></input>
+      </view>
+      <button class='alogin_btn' formType="submit">登录</button>
+    </form>
+  </view>
+</view>

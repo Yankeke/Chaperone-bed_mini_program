@@ -1,0 +1,57 @@
+/**index.wxss**/
+swiper{
+  width: 100%;
+  height: 430rpx;
+}
+
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+.top{
+  width: 100%;
+  padding: 50rpx 0;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.top .top_wrap{
+  background: #fff;
+  border-radius: 5px;
+  padding: 25rpx 80rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.top .top_wrap .ico{
+  width: 60rpx;
+  height: 60rpx;
+}
+.top .top_wrap .text{
+  margin-top:20rpx;
+}
+.index_scan{
+  width: 100%;
+  padding: 90rpx 0;
+}
+.index_scan .scan_btn{
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 50%;
+  background: #00bcd4;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.index_scan .scan_btn .scan_img{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+}
+.index_scan .scan_btn .scan_text{
+  color: #fff;
+}

@@ -1,0 +1,43 @@
+<wxs src="user.wxs" module="phone" />
+<view class='user_bg'>
+  <view class='top'>
+    <view class='top_user'>
+      <view class='user_img'>
+        <image src='../images/avator.png' ></image>
+      </view>
+      <view class='user_phone' wx:if="{{userPhone.length>0}}" bindtap='bindPhone' data-from="change" >{{phone.toHide(userPhone)}}</view>
+      <view class='user_phone' bindtap='bindPhone' wx:else>绑定手机</view>
+    </view>
+  </view>
+
+  <view class='center'>
+  <!-- 上 -->
+    <view class='lists'>
+      <view class='list' bindtap='toWallet'>
+        <image src='../images/wallet.png' class='img' ></image>
+        <view class='list_opt'>
+        <text>我的钱包</text>
+        </view>
+        <image src='../images/arrow-right.png' class='right_img' ></image>
+      </view>
+      <view class='list' bindtap='toRentRec'>
+        <image src='../images/record.png' class='img' ></image>      
+        <view class='list_opt'>租借记录</view>
+        <image src='../images/arrow-right.png' class='right_img' ></image>
+      </view>
+    </view>
+    <!-- 下 -->
+    <view class='lists'  style='margin-top:25rpx'>
+      <view class='list' bindtap='toHelp'>
+        <image src='../images/course.png' class='img' ></image>
+        <view class='list_opt'>新手教程</view>
+        <image src='../images/arrow-right.png' class='right_img' ></image>
+      </view>
+      <view class='list' bindtap='toAbout'>
+        <image src='../images/aboutus.png' class='img' ></image>      
+        <view class='list_opt'>关于我们</view>
+        <image src='../images/arrow-right.png' class='right_img' ></image>
+      </view>
+    </view>
+  </view>
+</view>

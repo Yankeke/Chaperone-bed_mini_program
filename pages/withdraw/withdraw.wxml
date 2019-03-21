@@ -1,0 +1,15 @@
+<view>
+  <view class='top'>
+    <view class='top_txt'>{{from == 'balance'?'余额':'押金'}}提现</view>
+  </view>
+  <view class='center'>
+    <block wx:if="{{from=='deposit'}}">
+      <view class='money'>您的押金为{{usersInfo.yajin}}元</view>
+      <button class="withdraw_btn" bindtap='withdrawBtn' disabled="{{disabled}}">我要提现</button>
+    </block>
+    <block wx:if="{{from=='balance'}}">
+      <view class='money'>您的余额为{{usersInfo.yue}}元</view>
+      <button class="withdraw_btn" bindtap='withdrawBalance' disabled="{{disabled}}">我要提现</button>
+    </block>
+  </view>
+</view>

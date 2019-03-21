@@ -1,0 +1,25 @@
+<view>
+  <view class='wallet'>
+    <view class='wallet_text'>
+      <view class='txt'>我的押金</view>
+      <view>¥ <text style='font-size:1.5rem;font-weight:bold'  bindtap='toPayrec' >{{usersInfo.yajin}}</text></view>
+    </view>
+    <text class='wallet_tip'>为确保合规使用本物品，需缴纳押金{{yajinVal}}元\n押金可随时退回付款账户</text>
+    <view class='money_btn'>
+      <view class='wallet_btn' bindtap='toRecharge' data-from="deposit" >充值</view>
+      <view class='wallet_btn' bindtap='toWithdraw' data-from="deposit" >提现</view>
+    </view>
+  </view>
+  <view class='wallet'>
+    <view class='wallet_text'>
+      <view class='txt'>我的余额</view>
+      <view>¥ <text style='font-size:1.5rem;font-weight:bold' bindtap='toPayrec' >{{usersInfo.yue}}</text></view>
+    </view>
+    <text class='wallet_tip'>余额提现一到五个工作日内到达原付款账户\n请留意余额变动</text>
+    <view class='money_btn'>
+      <view class='wallet_btn' bindtap='toRecharge' data-from="balance" >充值</view>
+      <view class='wallet_btn' bindtap='toWithdraw' data-from="balance" >提现</view>
+    </view>
+  </view>
+  <!-- <view class='tip'>点击充值，即表示您同意<text style='color:#00bcd4' bindtap='toTos'>《服务条款》</text></view> -->
+</view>

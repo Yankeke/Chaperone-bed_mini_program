@@ -1,0 +1,4 @@
+<view class="help_img">
+   <image src='{{imgUrl}}' mode='widthFix' class='img' ></image>
+   <button class='btn' bindtap='ok_btn' >我知道了</button>
+</view>

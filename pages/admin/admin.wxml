@@ -1,0 +1,22 @@
+<view>
+  <view class='top'>
+    <view class='top_txt'>您好，管理员</view>
+  </view>
+  <view class='admin'>
+    <view class='info'>
+      <view class='title'>床柜信息</view>
+      <view class='bed_info'>{{bedInfo}}</view>
+      <view class='uuid'>{{uuid}}</view>
+      <button class='btn' bindtap='openDoor' disabled='{{disabled}}'>打开柜门</button>
+    </view>
+  </view>
+  <view class='ctrl'>
+      <view class='title'>
+        您还可以编辑床柜信息
+      </view>
+      <textarea placeholder='{{bedInfo}}' class='edit_info' bindinput='editInfo'  name="bedInfo" value="{{infoVal}}">
+      </textarea>
+      <button class='btn' bindtap='toSubmit' disabled='{{disabled}}' >提交修改</button>
+  </view>
+  
+</view>

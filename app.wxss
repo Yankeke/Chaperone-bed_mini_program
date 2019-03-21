@@ -1,0 +1,9 @@
+/**app.wxss**/
+page{
+  background: #e8e7e3;
+}
+/* 重写按钮禁用时样式 */
+button[disabled][type="default"],wx-button[disabled]:not([type]) {
+  background:#47b1be;
+  color: #fff;
+}

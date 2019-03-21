@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<official-account style="width:100%"></official-account>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="{{indicatorActiveColor}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='top'>
+  <view class='top_wrap' bindtap='toHelp'>
+    <image src='../images/help.png' class='ico' ></image>
+    <text class='text'>使用说明</text>
+  </view>
+  <view class='top_wrap' bindtap='toWarn'>
+    <image src='../images/fix.png' class='ico' ></image>
+    <text class='text'>床柜报修</text>
+  </view>
+</view>
+<view class='index_scan' >
+  <view class='scan_btn'  bindtap='scan_btn' >
+    <image src='../images/scan.png' class='scan_img' ></image>
+    <text class='scan_text'>扫码用床</text>
+  </view>
+</view>

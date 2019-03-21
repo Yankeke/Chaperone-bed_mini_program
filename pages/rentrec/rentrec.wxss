@@ -1,0 +1,48 @@
+.list {
+  width: 95%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 5rpx 5rpx 8rpx #ccc;
+  padding: 10rpx 20rpx;
+  margin-top: 25rpx;
+  box-sizing: border-box;
+}
+.list:last-child{
+  margin-bottom: 25rpx;
+}
+.list  .list_top{
+  border-bottom: 1px solid #ccc;
+  color: #767778;
+  padding: 15rpx 0;
+}
+.list  .list_center{
+  display: flex;
+  align-items: center;
+}
+.list  .list_center .list_left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.list  .list_center .list_left .rent_time{
+  display: flex;
+  align-items: center;
+  margin: 10rpx 0;
+}
+.list  .list_center .list_left .rent_time text{
+  padding: 0 15rpx;
+  flex:1;
+}
+.list  .list_center .list_left .time_ico{
+  width: 45rpx;
+  height: 45rpx;
+}
+.list  .list_center .list_right{
+  color: #f00;
+}
+.rent .no_record{
+  margin-top: 40rpx;
+  text-align: center;
+  color: #767778;
+}

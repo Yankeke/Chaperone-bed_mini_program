@@ -1,0 +1,27 @@
+.list{
+  width: 95%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 5rpx 5rpx 8rpx #ccc;
+  padding: 20rpx 20rpx;
+  margin-top: 25rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.list .list_item{
+  display: flex;
+  justify-content: space-between;
+}
+.list .list_item:last-child{
+  margin-top: 30rpx;
+}
+.list:last-child{
+  margin-bottom: 25rpx;
+}
+.no_record{
+  margin-top: 40rpx;
+  text-align: center;
+  color: #767778;
+}

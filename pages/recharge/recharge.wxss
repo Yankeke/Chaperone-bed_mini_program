@@ -1,0 +1,105 @@
+.top{
+  background: #00bcd4;
+  width: 100%;
+  height: 410rpx;
+}
+.top .top_border{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 10rpx;
+  border: 1px solid #fff;
+}
+.top .top_img{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  background: #fff;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20rpx;
+  text-align: center;
+}
+.top .top_img image{
+  width: 90%;
+  height: 90%;
+}
+.center_text{
+  text-align: center;
+  color: #00bcd4;
+  position: relative;
+}
+.center_text::before,.center_text::after{
+  content:"";
+  width: 18%;
+  height: 2px;
+  top: 52%;
+  background: #00bcd4;
+  position: absolute;
+}
+.center_text::before{
+  left:10%;
+}
+.center_text::after{
+  right: 10%;
+}
+.top .money{
+  color: #fff;
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 1.5rem
+}
+.center{
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  width: 90%;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: -140rpx;
+  border-radius: 10rpx;
+  box-shadow: 5rpx 5rpx 8rpx #ccc;
+}
+.center radio-group{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.center radio-group label{
+  width: 35%;
+  margin-top: 45rpx;
+  border-radius: 10rpx;
+  border:1px solid #00bcd4;
+  box-sizing: border-box;
+  padding: 30rpx 20rpx;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #00bcd4;
+}
+.center .money_item{
+  width: 100%;
+  text-align: center;
+}
+.center .active{
+  background: #00bcd4;
+  color: #fff;
+}
+.center .sub_btn{
+  width: 90%;
+  margin: 0 auto;
+  background: #00bcd4;
+  color: #fff;
+  margin-top: 45rpx;
+  border-radius: 10rpx;
+  border: none;
+}
+/* 重写按钮禁用时样式 */
+button[disabled][type="default"],wx-button[disabled]:not([type]) {
+  background:#47b1be;
+  color: #fff;
+}
+.center .money{
+  text-align: center;
+  margin-top: 20rpx;
+}
